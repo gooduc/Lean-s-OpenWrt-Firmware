@@ -16,7 +16,7 @@ on:
     branches:
       - master
     paths:
-      - '.config'
+      - 'newifi3.config'
     schedule:
       - cron: 0 19 * * 4  # 每天国际时间19点，北京时间凌晨3点执行(北京+8)，北京时间周五凌晨3点执行
     watch:
@@ -25,7 +25,7 @@ on:
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
-  CONFIG_FILE: .config
+  CONFIG_FILE: newifi3.config
   DIY_SH: diy.sh
   SSH_ACTIONS: false        # SSH 连接 Actions 功能
   UPLOAD_BIN_DIR: true      # 上传 bin 目录。即包含所有 ipk 文件和固件的目录
