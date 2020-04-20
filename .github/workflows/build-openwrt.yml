@@ -10,13 +10,13 @@ name: Build OpenWrt
 
 on:
   repository_dispatch:
-  #release:
-  #  types: published
-  #push:
-  #  branches:
-  #    - master
-  #  paths:
-  #    - 'newifi3.config'
+  release:
+    types: published
+  push:
+    branches:
+      - master
+    paths:
+      - 'newifi3.config'
     schedule:
       - cron: 0 19 * * 4  # 每天国际时间19点，北京时间凌晨3点执行(北京+8)，北京时间周五凌晨3点执行
     watch:
