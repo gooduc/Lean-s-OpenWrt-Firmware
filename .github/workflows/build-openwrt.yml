@@ -22,11 +22,6 @@ on:
   watch:
     types: started      # 点star编译
 
-jobs:
-  build:
-    runs-on: ubuntu-latest
-    if: github.event.repository.owner.id == github.event.sender.id
-
 env:
   REPO_URL: https://github.com/coolsnowwolf/lede
   REPO_BRANCH: master
